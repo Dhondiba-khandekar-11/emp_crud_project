@@ -146,7 +146,7 @@ public class EmployeeDao {
 		String sql = "update employee set first_name = ?, last_name = ?, email = ?, gender = ?, address = ? where emp_id = ?";
 		PreparedStatement ps = conn.prepareStatement(sql);
 
-		ps.setString(1, employee.getFirstName());
+		ps.setString(1, employee.getFirstName()); 
 		ps.setString(2, employee.getLastName());
 		ps.setString(3, employee.getEmail());
 		ps.setString(4, employee.getGender());
